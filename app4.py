@@ -12,7 +12,7 @@ def get_interview_question(topic, previous_questions=[]):
     Output only the question.
     """
     try:
-        response = model.generate_content(prompt)
+        response = generate_content(prompt)
         return response.text.strip()
     except Exception as e:
         return f"Error: {e}"
