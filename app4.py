@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-model = genai.GenerativeModel("gemini-1.5-flash")
+
 
 def get_interview_question(topic, previous_questions=[]):
     """Generates an interview question using Gemini API."""
